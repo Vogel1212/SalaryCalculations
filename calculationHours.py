@@ -1,3 +1,8 @@
+
+# Calculator for final salary with hours worked, with income tax deductions showing net salary.
+
+######
+
 ganho = int(input('Value earned per hour worked: US$'))
 horas = int(input('How many hours did you work this month: US$'))
 bruto = horas*ganho
