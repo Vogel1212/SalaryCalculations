@@ -1,3 +1,7 @@
+# salary of an employee and his new salary, with a 15% increase.
+
+######
+
 # sal = int(input('What is the employees salary? US$'))
 sal = int(input('What is the employees salary? R$ '))
 perc = int(input('How many percent increase?: '))
