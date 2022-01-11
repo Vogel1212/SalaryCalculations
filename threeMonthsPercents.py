@@ -1,14 +1,28 @@
 # salary in three years, if it was increased to 10% every X years.
-
+from math import sqrt 
 ######
-
-# sal = int(input('What is the employees monthly salary? US$'))
-sal = int(input('What is the employees monthly salary? R$ '))
+sal = int(input('What is the employees monthly salary? US$'))
 perc = int(input('How many percent quarterly increase?: '))
-years = int(input('How many years should this calculation take?: '))
-c1 = years*12/3
+months = int(input('How many months should this calculation take?: '))
 calc = sal*(perc/100)
-total = calc+sal*c1
+num = sqrt()
+totalSal = calc+sal
+
+methodCalc = 
+
+while True:
+    if  months == 3:
+        sum1 = totalSal
+        sum2 = sum1*(perc/100)   
+
+        sum3 = sum2
+        sum4 = sum3*(perc/100) 
+
+        sum5 = sum4
+        sum6 = sum5*(perc/100)  
+        break
+
+total = sum6+sal
 calcfim = total-sal
-# print('The employees old salary was US${:.2f}, now with {}% of quarterly increase during {} years, will start to win US${:.2f} a month.\nWith an increase of US${:.2f} after 3 years'.format(sal,perc,years,total,calcfim))
-print('The employees old salary was R$ {:.2f}, now with {}% of quarterly increase during {} years, will start to win R$ {:.2f} a month.\nWith an increase of R$ {:.2f} after {} years'.format(sal,perc,years,total,calcfim,years))
+
+print('The employees old salary was US${:.2f}, now with {}% of quarterly increase during {} years, will start to win US${:.2f} a month.\nWith an increase of US${:.2f} after 3 months'.format(sal,perc,months,total,calcfim))
