@@ -3,16 +3,16 @@
 
 ######
 
-ganho = float(input('Value earned per hour worked: US$'))
-horas = float(input('How many hours did you work this month: US$'))
-bruto = horas*ganho
-ir = bruto*(11/100)
-inss = bruto*(8/100)
-sind = bruto*(5/100)
-liq = bruto-ir-inss-sind
+gain = float(input('Value earned per hour worked: US$'))
+hours = float(input('How many hours did you work this month: US$'))
+raw = hours*gain
+ir = raw*(11/100)
+inss = raw*(8/100)
+sind = raw*(5/100)
+liq = raw-ir-inss-sind
 
 
-print('Gross salary: US${:.2f}'.format(bruto))
+print('Raw salary: US${:.2f}'.format(raw))
 print('IR (11%): US${:.2f}'.format(ir))
 print('INSS (8%): US${:.2f}'.format(inss))
 print('Sindicato (5%): US${:.2f}'.format(sind))
