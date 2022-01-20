@@ -31,7 +31,8 @@
 #       (sal,perc,months,totalSal,Calculator.calcfim,Calculator.result))
 
 
-sal = float(input('What is the employees monthly salary? US$: '))
+sal = int(input('What is the employees monthly salary? US$: '))
 perc = int(input('How many percent quarterly increase?: '))
-result = sal + (sal * 0.'%perc')
-print('Salary plus 15 percent is: ', result)
+percT = (1.0/perc*100)
+result = sal + (sal * percT)
+print('Salary plus {} percent is: {}'.format(perc,result))
