@@ -32,5 +32,6 @@
 
 
 sal = float(input('What is the employees monthly salary? US$: '))
-result = sal + (sal * 0.15)
+perc = int(input('How many percent quarterly increase?: '))
+result = sal + (sal * 0.'%perc')
 print('Salary plus 15 percent is: ', result)
