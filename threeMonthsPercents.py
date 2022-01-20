@@ -1,31 +1,36 @@
 # # salary in three years, if it was increased to 10% every X years.
 # from math import sqrt 
 
-class Calculator:
-    def __init__(self, sal, perc, months, total, calcfim, result):
-        self.sal = sal
-        self.perc = perc
-        self.months = months
-        self.calcfim = calcfim
-        self.result = result
+# class Calculator:
+#     def __init__(self, sal, perc, months, total, calcfim, result):
+#         self.sal = sal
+#         self.perc = perc
+#         self.months = months
+#         self.calcfim = calcfim
+#         self.result = result
     
-    # def Calculation(self):
-    #     calc = sal*(perc/100)
-    #     totalSal = calc+sal
+#     # def Calculation(self):
+#     #     calc = sal*(perc/100)
+#     #     totalSal = calc+sal
     
-    def Calculation(self):
-        result = sal + (sal * 0.15)
+#     def Calculation(self):
+#         result = sal + (sal * 0.15)
         
-sal = int(input('What is the employees monthly salary? US$'))
-perc = int(input('How many percent quarterly increase?: '))
-months = int(input('How many months should this calculation take?: '))
+# sal = int(input('What is the employees monthly salary? US$'))
+# perc = int(input('How many percent quarterly increase?: '))
+# months = int(input('How many months should this calculation take?: '))
 
-if months == 1:
-    totalSal = Calculator.result
-elif months == 2:
-    totalSal = Calculator.result*2
+# if months == 1:
+#     totalSal = Calculator.result
+# elif months == 2:
+#     totalSal = Calculator.result*2
 
-Calculator()
+# Calculator()
 
-print('The employees old salary was US${:.2f}, now with {}% of quarterly increase during {} years, will start to win US${:.2f} a month.\nWith an increase of US${:.2f} after 3 months'.format
-      (sal,perc,months,totalSal,Calculator.calcfim,Calculator.result))
+# print('The employees old salary was US${:.2f}, now with {}% of quarterly increase during {} years, will start to win US${:.2f} a month.\nWith an increase of US${:.2f} after 3 months'.format
+#       (sal,perc,months,totalSal,Calculator.calcfim,Calculator.result))
+
+
+sal = float(input('What is the employees monthly salary? US$: '))
+result = sal + (sal * 0.15)
+print('Salary plus 15 percent is: ', result)
