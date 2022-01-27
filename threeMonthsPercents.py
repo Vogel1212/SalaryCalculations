@@ -46,36 +46,36 @@ readjust4 = 5/100
 if current_wage <= 280:
     salary_new = current_wage + ( current_wage * readjust1)
     value_increase = current_wage - salary_new
-    print(f'O salário atual é: {current_wage}')
-    print(f'O percentual de aumento é: {readjust1*100:.2f} %')
-    print(f'O valor do aumento é: {value_increase}')
-    print(f'O novo salário é: {salary_new}')
+    print(f'Current salary is: {current_wage}')
+    print(f'The percentage increase is: {readjust1*100:.2f} %')
+    print(f'The value of the increase is: {value_increase}')
+    print(f'The new salary is: {salary_new}')
 
 
 elif current_wage > 280 and current_wage <=700:
     salary_new = current_wage + (current_wage * readjust2)
     value_increase = current_wage - salary_new
-    print(f'O salário atual é: {current_wage}')
-    print(f'O percentual de aumento é: {readjust2*100:.2f} %')
-    print(f'O valor do aumento é: {value_increase}')
-    print(f'O novo salário é: {salary_new}')
+    print(f'Current salary is: {current_wage}')
+    print(f'The percentage increase is: {readjust2*100:.2f} %')
+    print(f'The value of the increase is: {value_increase}')
+    print(f'The new salary is: {salary_new}')
 
 
 elif current_wage > 700 and current_wage <= 1500:
     salary_new = current_wage + (current_wage * readjust3)
     value_increase = salary_new - current_wage
-    print(f'O salário atual é: {current_wage}')
-    print(f'O percentual de aumento é: {readjust3*100:.2f} %')
-    print(f'O valor do aumento é: {value_increase}')
-    print(f'O novo salário é: {salary_new}')
+    print(f'Current salary is: {current_wage}')
+    print(f'The percentage increase is: {readjust3*100:.2f} %')
+    print(f'The value of the increase is: {value_increase}')
+    print(f'The new salary is: {salary_new}')
 
 elif current_wage > 1500:
     salary_new = current_wage + (current_wage * readjust4)
     value_increase = current_wage - salary_new
-    print(f'O salário atual é: {current_wage}')
-    print(f'O percentual de aumento é: {readjust4*100:.2f} %')
-    print(f'O valor do aumento é: {value_increase}')
-    print(f'O novo salário é: {salary_new}')
+    print(f'Current salary is: {current_wage}')
+    print(f'The percentage increase is: {readjust4*100:.2f} %')
+    print(f'The value of the increase is: {value_increase}')
+    print(f'The new salary is: {salary_new}')
 
 else:
-    print('Não foi possível calcular seu reajuste, digite novamente seu salário atual')
+    print('Unable to calculate your salary adjustment, please re-enter your salary')
