@@ -1,5 +1,3 @@
-__autor__ = 'Vogel1212'
-
 # salary of an employee and his new salary, with a 15% increase.
 ######
 import math

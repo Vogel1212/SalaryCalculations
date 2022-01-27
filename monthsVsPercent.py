@@ -1,5 +1,3 @@
-__autor__ = 'Vogel1212'
-
 # # salary in three years, if it was increased to 10% every X years.
 # from math import sqrt 
 

@@ -1,5 +1,3 @@
-__autor__ = 'Vogel12'
-
 # salary adjustment according to salary height
 
 # salaries up to BRL 800.00 (including): 20% increase
