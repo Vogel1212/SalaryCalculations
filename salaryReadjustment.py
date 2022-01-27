@@ -1,5 +1,10 @@
 # salary adjustment according to salary height
 
+# salaries up to BRL 800.00 (including): 20% increase
+# salaries between BRL 800.00 and BRL 1000.00: 15% increase
+# salaries between BRL 1000.00 and BRL 1500.00: 10% increase
+# salaries from BRL 1500.00 onwards: 5% increase
+
 current_wage = float(input('What is the employees monthly salary? US$: '))
 readjust1 = 20/100
 readjust2 = 15/100
