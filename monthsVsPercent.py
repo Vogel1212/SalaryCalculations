@@ -1,3 +1,5 @@
+__autor__ = 'Vogel1212'
+
 # # salary in three years, if it was increased to 10% every X years.
 # from math import sqrt 
 
@@ -36,3 +38,10 @@
 # percT = (1.0/perc*100)
 # result = sal + (sal * percT)
 # print('Salary plus {} percent is: {}'.format(perc,result))
+
+salary = input ("Insert the value of your salary ")
+expenses = input ("insert the value of your expenses ")
+
+percentage = (float(expenses)*100)/float(salary)
+
+print("You spend ",percentage ,"%", "of your salary in your expenses.")

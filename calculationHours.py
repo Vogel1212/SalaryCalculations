@@ -1,3 +1,4 @@
+__autor__ = 'Vogel1212'
 
 # Calculator for final salary with hours worked, with income tax deductions showing net salary.
 
