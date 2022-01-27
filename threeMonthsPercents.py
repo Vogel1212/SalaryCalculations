@@ -31,8 +31,27 @@
 #       (sal,perc,months,totalSal,Calculator.calcfim,Calculator.result))
 
 
-sal = int(input('What is the employees monthly salary? US$: '))
-perc = int(input('How many percent quarterly increase?: '))
-percT = (1.0/perc*100)
-result = sal + (sal * percT)
-print('Salary plus {} percent is: {}'.format(perc,result))
+# sal = int(input('What is the employees monthly salary? US$: '))
+# perc = int(input('How many percent quarterly increase?: '))
+# percT = (1.0/perc*100)
+# result = sal + (sal * percT)
+# print('Salary plus {} percent is: {}'.format(perc,result))
+
+salario = float(input('Salário do colaborador: '))
+
+if (salario <= 280):
+    percentual = 20
+elif (salario <= 700):
+    percentual = 15
+elif (salario <= 1500):
+    percentual = 10
+else:
+    percentual = 5
+print('Salario original: R$ ', salario)
+print('Percentual: ',percentual,'%')
+percentual = percentual/100.0
+aumento = percentual * salario
+novo_salario = salario + aumento
+
+print('Aumento: R$ ',aumento)
+print('Novo salário: R$ ', novo_salario)
