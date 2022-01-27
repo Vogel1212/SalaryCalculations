@@ -37,21 +37,45 @@
 # result = sal + (sal * percT)
 # print('Salary plus {} percent is: {}'.format(perc,result))
 
-salario = float(input('Salário do colaborador: '))
+current_wage = float(input('What is the employees monthly salary? US$: '))
+readjust1 = 20/100
+readjust2 = 15/100
+readjust3 = 10/100
+readjust4 = 5/100
 
-if (salario <= 280):
-    percentual = 20
-elif (salario <= 700):
-    percentual = 15
-elif (salario <= 1500):
-    percentual = 10
+if current_wage <= 280:
+    salary_new = current_wage + ( current_wage * readjust1)
+    value_increase = current_wage - salary_new
+    print(f'O salário atual é: {current_wage}')
+    print(f'O percentual de aumento é: {readjust1*100:.2f} %')
+    print(f'O valor do aumento é: {value_increase}')
+    print(f'O novo salário é: {salary_new}')
+
+
+elif current_wage > 280 and current_wage <=700:
+    salary_new = current_wage + (current_wage * readjust2)
+    value_increase = current_wage - salary_new
+    print(f'O salário atual é: {current_wage}')
+    print(f'O percentual de aumento é: {readjust2*100:.2f} %')
+    print(f'O valor do aumento é: {value_increase}')
+    print(f'O novo salário é: {salary_new}')
+
+
+elif current_wage > 700 and current_wage <= 1500:
+    salary_new = current_wage + (current_wage * readjust3)
+    value_increase = salary_new - current_wage
+    print(f'O salário atual é: {current_wage}')
+    print(f'O percentual de aumento é: {readjust3*100:.2f} %')
+    print(f'O valor do aumento é: {value_increase}')
+    print(f'O novo salário é: {salary_new}')
+
+elif current_wage > 1500:
+    salary_new = current_wage + (current_wage * readjust4)
+    value_increase = current_wage - salary_new
+    print(f'O salário atual é: {current_wage}')
+    print(f'O percentual de aumento é: {readjust4*100:.2f} %')
+    print(f'O valor do aumento é: {value_increase}')
+    print(f'O novo salário é: {salary_new}')
+
 else:
-    percentual = 5
-print('Salario original: R$ ', salario)
-print('Percentual: ',percentual,'%')
-percentual = percentual/100.0
-aumento = percentual * salario
-novo_salario = salario + aumento
-
-print('Aumento: R$ ',aumento)
-print('Novo salário: R$ ', novo_salario)
+    print('Não foi possível calcular seu reajuste, digite novamente seu salário atual')
