@@ -1,2 +1,2 @@
 # SalaryCalculations
-systems for wage calculations
+systems for wage calculation
