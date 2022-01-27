@@ -6,7 +6,7 @@ readjust2 = 15/100
 readjust3 = 10/100
 readjust4 = 5/100
 
-if current_wage <= 280:
+if current_wage <= 800:
     salary_new = current_wage + ( current_wage * readjust1)
     value_increase = current_wage - salary_new
     print(f'Current salary is: {current_wage}')
@@ -15,7 +15,7 @@ if current_wage <= 280:
     print(f'The new salary is: {salary_new}')
 
 
-elif current_wage > 280 and current_wage <=700:
+elif current_wage > 800 and current_wage <=1000:
     salary_new = current_wage + (current_wage * readjust2)
     value_increase = current_wage - salary_new
     print(f'Current salary is: {current_wage}')
@@ -24,7 +24,7 @@ elif current_wage > 280 and current_wage <=700:
     print(f'The new salary is: {salary_new}')
 
 
-elif current_wage > 700 and current_wage <= 1500:
+elif current_wage > 1000 and current_wage <= 1500:
     salary_new = current_wage + (current_wage * readjust3)
     value_increase = salary_new - current_wage
     print(f'Current salary is: {current_wage}')
